@@ -1,0 +1,30 @@
+﻿@model Rifas?
+
+
+<form asp-action="Enviar" method="post">
+    <div class="row">
+        <div class="col-sm-2">
+            <label asp-for="@Model.Titulo"></label>
+            <input type="text" asp-for="@Model.Titulo" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <label asp-for="@Model.Premio"></label>
+            <input type="text" asp-for="@Model.Premio" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <label asp-for="@Model.Rodape"></label>
+            <input type="text" asp-for="@Model.Rodape" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <label asp-for="@Model.Valor"></label>
+            <input type="text" asp-for="@Model.Valor" />
+        </div>
+    </div>
+    <button css="btn btn-primary">Gerar</button>
+</form>
